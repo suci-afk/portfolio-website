@@ -1,20 +1,96 @@
-body{
-    font-family: Arial;
-    background-color: #f4f4f4;
-    padding: 20px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* Navbar */
 nav{
-    background-color: blue;
-    padding: 10px;
+    background: #2563eb;
+    padding: 15px 40px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 nav a{
     color: white;
-    margin-right: 15px;
     text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
-h1{
-    color: darkblue;
+nav a:hover{
+    color: yellow;
+}
+
+/* Hero Section */
+.hero{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+    background: linear-gradient(to right, #2563eb, #60a5fa);
+    color: white;
+}
+
+.hero h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.btn{
+    background: white;
+    color: #2563eb;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: yellow;
+    transform: scale(1.05);
+}
+
+/* Content */
+.content{
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.content h1{
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.content p{
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.content ul{
+    margin-left: 20px;
+    line-height: 1.8;
 }
